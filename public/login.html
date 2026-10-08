@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Mini System Software Toolkit</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/auth.css">
+</head>
+<body>
+    <main class="auth-page">
+        <section class="auth-card">
+            <p class="eyebrow">Mini System Software Toolkit</p>
+            <h1>Login</h1>
+            <p class="muted">Sign in to continue to the toolkit.</p>
+
+            <form id="loginForm">
+                <label for="email">Email</label>
+                <input id="email" type="email" required autocomplete="email">
+
+                <label for="password">Password</label>
+                <input id="password" type="password" required autocomplete="current-password">
+
+                <button class="button primary full-width" type="submit">Login</button>
+            </form>
+
+            <p id="message" class="message"></p>
+            <p class="switch-link">New user? <a href="/register.html">Create an account</a></p>
+        </section>
+    </main>
+    <script src="/js/auth.js"></script>
+</body>
+</html>

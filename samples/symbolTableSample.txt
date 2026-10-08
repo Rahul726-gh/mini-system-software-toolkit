@@ -1,0 +1,4 @@
+int age = 20;
+float marks = 85;
+double percentage = 85.5;
+char grade = A;

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Mini System Software Toolkit</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
+</head>
+<body>
+    <header class="topbar">
+        <div>
+            <strong>Mini System Software Toolkit</strong>
+            <span id="welcomeText" class="topbar-muted"></span>
+        </div>
+        <button id="logoutButton" class="button secondary">Logout</button>
+    </header>
+
+    <main class="page-container">
+        <section class="page-heading">
+            <p class="eyebrow">Dashboard</p>
+            <h1>Select a Module</h1>
+            <p class="muted">Choose a System Software module to create or open a project.</p>
+        </section>
+
+        <section id="moduleGrid" class="module-grid">
+            <button class="module-card" data-module="lexical">
+                <span class="module-number">01</span>
+                <h2>Lexical Analyzer</h2>
+                <p>Generate tokens from source code.</p>
+            </button>
+            <button class="module-card" data-module="symbol-table">
+                <span class="module-number">02</span>
+                <h2>Symbol Table</h2>
+                <p>Extract identifiers, types and values.</p>
+            </button>
+            <button class="module-card" data-module="two-pass-assembler">
+                <span class="module-number">03</span>
+                <h2>Two Pass Assembler</h2>
+                <p>Generate symbols, intermediate code and machine code.</p>
+            </button>
+            <button class="module-card" data-module="recursive-parser">
+                <span class="module-number">04</span>
+                <h2>Recursive Descent Parser</h2>
+                <p>Parse arithmetic expressions using a grammar.</p>
+            </button>
+            <button class="module-card" data-module="quadruple">
+                <span class="module-number">05</span>
+                <h2>Quadruple Generator</h2>
+                <p>Generate intermediate-code quadruples.</p>
+            </button>
+        </section>
+    </main>
+    <script src="/js/dashboard.js"></script>
+</body>
+</html>

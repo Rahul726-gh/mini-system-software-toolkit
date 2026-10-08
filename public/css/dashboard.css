@@ -1,0 +1,45 @@
+.module-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.module-card {
+    min-height: 170px;
+    padding: 24px;
+    text-align: left;
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(31, 41, 55, 0.04);
+    color: var(--text);
+}
+
+.module-card:hover {
+    border-color: #9eacd0;
+    transform: translateY(-1px);
+}
+
+.module-number {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.module-card h2 {
+    margin: 0 0 8px;
+    font-size: 1.2rem;
+}
+
+.module-card p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.5;
+}
+
+@media (max-width: 720px) {
+    .module-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Mini System Software Toolkit</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/auth.css">
+</head>
+<body>
+    <main class="auth-page">
+        <section class="auth-card">
+            <p class="eyebrow">Mini System Software Toolkit</p>
+            <h1>Create Account</h1>
+            <p class="muted">Register before using the toolkit.</p>
+
+            <form id="registerForm">
+                <label for="name">Name</label>
+                <input id="name" type="text" required autocomplete="name">
+
+                <label for="email">Email</label>
+                <input id="email" type="email" required autocomplete="email">
+
+                <label for="password">Password</label>
+                <input id="password" type="password" minlength="6" required autocomplete="new-password">
+
+                <button class="button primary full-width" type="submit">Register</button>
+            </form>
+
+            <p id="message" class="message"></p>
+            <p class="switch-link">Already registered? <a href="/login.html">Login</a></p>
+        </section>
+    </main>
+    <script src="/js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toolkit | Mini System Software Toolkit</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/toolkit.css">
+</head>
+<body>
+    <header class="topbar">
+        <div>
+            <a class="brand-link" href="/dashboard.html">Mini System Software Toolkit</a>
+            <span id="moduleTitle" class="topbar-muted"></span>
+        </div>
+        <button id="logoutButton" class="button secondary">Logout</button>
+    </header>
+
+    <main class="page-container toolkit-page">
+        <section id="projectChooser" class="chooser-panel">
+            <div>
+                <p class="eyebrow">Project</p>
+                <h1 id="chooserTitle">Choose Project Type</h1>
+                <p class="muted">Create a new project or continue with an existing project for this module.</p>
+            </div>
+            <div class="choice-grid">
+                <button id="newProjectButton" class="choice-card">
+                    <strong>New Project</strong>
+                    <span>Start with a new project and source code.</span>
+                </button>
+                <button id="existingProjectButton" class="choice-card">
+                    <strong>Existing Project</strong>
+                    <span>Open a saved project from this module.</span>
+                </button>
+            </div>
+        </section>
+
+        <section id="existingProjectsPanel" class="panel hidden">
+            <div class="panel-header">
+                <div>
+                    <h2>Existing Projects</h2>
+                    <p class="muted">Only projects from the selected module are shown.</p>
+                </div>
+                <button id="backToChooserButton" class="button secondary">Back</button>
+            </div>
+            <div id="projectList" class="project-list"></div>
+        </section>
+
+        <section id="editorPanel" class="panel hidden">
+            <div class="panel-header">
+                <div>
+                    <p class="eyebrow">Editor</p>
+                    <h2 id="editorTitle">Project</h2>
+                </div>
+                <button id="editorBackButton" class="button secondary">Back</button>
+            </div>
+
+            <label for="projectName">Project Name</label>
+            <input id="projectName" class="project-name-input" type="text" placeholder="Enter project name">
+
+            <label for="sourceCode">Source Code / Input</label>
+            <textarea id="sourceCode" class="code-editor" spellcheck="false" placeholder="Enter source code here..."></textarea>
+
+            <div class="button-row">
+                <button id="saveButton" class="button primary">Save</button>
+                <button id="runButton" class="button success">Run</button>
+            </div>
+
+            <p id="statusMessage" class="message"></p>
+
+            <section class="output-section">
+                <h3>Output</h3>
+                <div id="output" class="output-box">Run the project to see output.</div>
+            </section>
+
+            <section class="history-section">
+                <div class="panel-header compact">
+                    <div>
+                        <h3>Execution History</h3>
+                        <p class="muted">Every Run is saved separately.</p>
+                    </div>
+                </div>
+                <div id="history" class="history-list"></div>
+            </section>
+        </section>
+    </main>
+    <script src="/js/toolkit.js"></script>
+</body>
+</html>

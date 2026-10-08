@@ -1,0 +1,17 @@
+{
+  "name": "mini-system-software-toolkit",
+  "version": "1.0.0",
+  "description": "College PBL - Mini System Software Toolkit",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.13.1"
+  }
+}
